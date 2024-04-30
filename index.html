@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Medieval Blacksmith Tycoon</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="level-system">
+        <h2>Level: <span id="level">1</span> XP: <span id="xp">0</span>/100</h2>
+        <div id="xp-bar-container">
+            <div id="xp-bar"></div>
+        </div>
+        <p>Craftsman Skill: <span id="craftsmanSkill">0</span></p>
+    </div>
+    <h1>Medieval Weapons Blacksmith Tycoon</h1>
+    <div id="resources">
+        <h2>Resources</h2>
+        <p>Money: <span id="money">100</span> gold</p>
+        <p>Iron: <span id="iron">50</span> units</p>
+        <p>Wood: <span id="wood">30</span> units</p>
+    </div>
+    <div id="crafting">
+        <h2>Craft Weapons</h2>
+        <button id="sword" onclick="startCrafting('sword')">Craft Sword (20 iron, 5 wood)</button>
+        <button id="axe" onclick="startCrafting('axe')">Craft Axe (15 iron, 10 wood)</button>
+        <!-- Additional weapons initially hidden or disabled -->
+        <button id="spear" onclick="startCrafting('spear')" style="display:none;">Craft Spear (25 iron, 15 wood)</button>
+        <button id="halberd" onclick="startCrafting('halberd')" style="display:none;">Craft Halberd (30 iron, 20 wood)</button>
+        <!-- More weapons can be added similarly -->
+    </div>
+    <div id="log">
+        <h2>Log</h2>
+        <ul id="events"></ul>
+    </div>
+    <script src="game.js"></script>
+</body>
+</html>
